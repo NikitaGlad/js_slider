@@ -15,9 +15,6 @@ var swipeStartX = null;
 var swipeEndX = null;
 
 
-
-
-
 function roll (n){
     if(n === undefined){
         n = currentSlide + 1;
@@ -105,10 +102,5 @@ btnNext.addEventListener("click", clickNext);
 btnPrev.addEventListener("click", clickPrev);
 indicatorContainer.addEventListener("click", indicatorTo);
 document.addEventListener("keydown", pressKey);
-carousel.addEventListener('touchstart', swipeStart);
-carousel.addEventListener('touchend', swipeEnd);
-
-
-
-
-
+carousel.addEventListener("touchstart", swipeStart);
+carousel.addEventListener("touchend", swipeEnd);
